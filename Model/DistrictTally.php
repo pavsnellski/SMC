@@ -31,4 +31,15 @@ class DistrictTally extends AppModel {
 			'order' => ''
 		)
 	);
+
+	public $validate = array(
+	'sheet_number'=>array(
+				'rule' => 'Numeric',
+                'required' => true,
+                'message' => 'Numbers only'
+	)
+	
+	
+	
+	);
 }

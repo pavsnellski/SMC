@@ -136,9 +136,11 @@ else
 		<div id="Part2">
 		<?php
 		echo "<table>";
-		echo "<td></td><th>".substr($variable_list['rec_smc_ag1_b'][$lang],-$boylen+1)."</th><th>".substr($variable_list['rec_smc_ag1_g'][$lang],-$girllen+1)."</th><td></td><th>".substr($variable_list['rec_smc_ag1_b'][$lang],-$boylen+1)."</th><th>".substr($variable_list['rec_smc_ag1_g'][$lang],-$girllen+1)."</th>";
+		echo "<td></td><td></td><th>".substr($variable_list['rec_smc_ag1_b'][$lang],-$boylen+1)."</th><th>".substr($variable_list['rec_smc_ag1_g'][$lang],-$girllen+1)."</th><td></td><th>".substr($variable_list['rec_smc_ag1_b'][$lang],-$boylen+1)."</th><th>".substr($variable_list['rec_smc_ag1_g'][$lang],-$girllen+1)."</th>";
 		echo "<tr><th>";
-		echo substr($variable_list['rec_smc_ag1_b'][$lang],0,strlen($variable_list['rec_smc_ag1_b'][$lang])-$boylen);
+		echo substr($variable_list['rec_smc_ag1_b'][$lang],0,strlen($variable_list['rec_smc_ag1_b'][$lang])-$boylen-10);
+		echo "</th><th>";
+		echo substr(substr($variable_list['rec_smc_ag1_b'][$lang],0,strlen($variable_list['rec_smc_ag1_b'][$lang])-$boylen),-8);
 		echo "</th><td>";
 		echo $this->Form->input('rec_smc_ag1_b', array('label'=>''));
 		echo "</td><td>";
@@ -150,7 +152,9 @@ else
 		echo "</td><td>";
 		echo $this->Form->input('rec_smc_ag2_g', array('label'=>''));
 		echo "</td><tr><th>";
-		echo substr($variable_list['inegbl_smc_ag1_b'][$lang],0,strlen($variable_list['inegbl_smc_ag1_b'][$lang])-$boylen);
+		echo substr($variable_list['inegbl_smc_ag1_b'][$lang],0,strlen($variable_list['inegbl_smc_ag1_b'][$lang])-$boylen-10);
+		echo "</th><th>";
+		echo substr(substr($variable_list['inegbl_smc_ag1_b'][$lang],0,strlen($variable_list['inegbl_smc_ag1_b'][$lang])-$boylen),-8);
 		echo "</th><td>";
 		echo $this->Form->input('inegbl_smc_ag1_b', array('label'=>''));
 		echo "</td><td>";
@@ -162,7 +166,9 @@ else
 		echo "</td><td>";
 		echo $this->Form->input('inegbl_smc_ag2_g', array('label'=>''));
 		echo "</td><tr><th>";
-		echo substr($variable_list['redose_smc_ag1_b'][$lang],0,strlen($variable_list['redose_smc_ag1_b'][$lang])-$boylen);
+		echo substr($variable_list['redose_smc_ag1_b'][$lang],0,strlen($variable_list['redose_smc_ag1_b'][$lang])-$boylen-10);
+		echo "</th><th>";
+		echo substr(substr($variable_list['redose_smc_ag1_b'][$lang],0,strlen($variable_list['redose_smc_ag1_b'][$lang])-$boylen),-8);
 		echo "</th><td>";
 		echo $this->Form->input('redose_smc_ag1_b', array('label'=>''));
 		echo "</td><td>";
